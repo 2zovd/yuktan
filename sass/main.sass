@@ -92,6 +92,15 @@ body
   font: 60px/62px 'Bonfire'
   color: #4d3530
   display: inline-block
+  -webkit-transition: all .15s
+  -o-transition: all .15s
+  transition: all .15s
+  &:hover
+    color: #4d3530
+    -webkit-transform: scale(1.15)
+    -ms-transform: scale(1.15)
+    -o-transform: scale(1.15)
+    transform: scale(1.15)
 
 .header-main
   position: fixed
@@ -128,8 +137,20 @@ body
       -webkit-transition: all .15s
       -o-transition: all .15s
       transition: all .15s
+      border: 1px solid transparent
+      background-color: transparent
       &:hover
-        background-color: #d7cecc
+        border: 1px solid #d6cecc
+      &:active
+        color: #a28a7a
+    .donatello-link
+      color: #a17331
+      background-color: #e7e2e1
+      &:hover
+        border: 1px solid transparent
+        background-color: #53c4ce
+        color: #fff
+
   .lang
     a
       font-size: 15px
@@ -140,8 +161,6 @@ body
     .active-lang
       color: #010101
       text-decoration: underline
-
-.banner-box
 
 .banner-logo
   display: block
@@ -173,19 +192,94 @@ body
       display: inline-block
       margin: 5px
       a
-        color: #000
         display: inline-block
         font-family: 'OpenSansLight'
         font-size: 16px
         line-height: 35px
-        border: 1px solid transparent
+        color: #4d3530
+        padding: 0 25px
         -webkit-transition: all .15s
         -o-transition: all .15s
         transition: all .15s
-        padding: 0 25px
+        border: 1px solid transparent
+        background-color: transparent
         &:hover
-          color: #a17331
-          background-color: #e7e2e1
+          border: 1px solid #d6cecc
+        &:active
+          color: #a28a7a
+      .donatello-link
+        color: #a17331
+        background-color: #e7e2e1
+        &:hover
+          border: 1px solid transparent
+          background-color: #53c4ce
+          color: #fff
+      .active
+        color: #a28a7a
+        border: 1px solid #e3dcd7
 /* content nav END */
+
+/* new products */
+.new-products
+  position: relative
+
+.new-prod_title
+  font-family: 'OpenSansLight'
+  color: #000
+  font-size: 36px
+  line-height: 38px
+  display: block
+  text-transform: uppercase
+  margin-bottom: 25px
+
+.h2
+  margin: 0 auto
+  display: block
+  text-align: center
+  max-width: 700px
+  text-transform: uppercase
+  font-family: 'OpenSansRegular'
+  color: #000
+  font-size: 75px
+  line-height: 80px
+  margin-bottom: 55px
+
+.new-slider_hold
+  position: relative
+
+.new-product_slide
+  outline:none
+
+.slider-arrow
+  position: absolute
+  top: 50%
+  -webkit-transform: translateY(-50%)
+  -ms-transform: translateY(-50%)
+  -o-transform: translateY(-50%)
+  transform: translateY(-50%)
+  width: 95px
+  height: 95px
+  background: #4d3530
+  border: none
+  font-size: 0
+  z-index: 100
+  color: #fff
+  font-size: 27px
+  line-height: 30px
+  outline: none
+  border: 1px solid transparent
+  -webkit-transition: all .1s
+  -o-transition: all .1s
+  transition: all .1s
+  &:hover
+    background: transparent
+    border: 1px solid #d0c6c3
+    color: #4d3530
+
+.slider-arrow.prev-arrow
+  left: 2px
+.slider-arrow.next-arrow
+  right: 2px
+/* new products END */
 
 @import 'media'
