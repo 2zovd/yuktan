@@ -242,13 +242,39 @@ body
   color: #000
   font-size: 75px
   line-height: 80px
-  margin-bottom: 55px
+  margin-bottom: 100px
 
 .new-slider_hold
   position: relative
 
+.new-products-slider
+  margin-bottom: 50px
+
+.flex-container
+  display: -webkit-flex
+  display: -moz-flex
+  display: -ms-flex
+  display: -o-flex
+  display: flex
+  -webkit-justify-content: space-between
+  -moz-justify-content: space-between
+  -ms-justify-content: space-between
+  -o-justify-content: space-between
+  justify-content: space-between
+  -webkit-align-content: stretch
+  -moz-align-content: stretch
+  -ms-align-content: stretch
+  -o-align-content: stretch
+  align-content: stretch
+  -webkit-flex-wrap: wrap
+  -moz-flex-wrap: wrap
+  -ms-flex-wrap: wrap
+  -o-flex-wrap: wrap
+  flex-wrap: wrap
+
 .new-product_slide
-  outline:none
+  position: relative
+  outline: none
 
 .slider-arrow
   position: absolute
@@ -280,6 +306,69 @@ body
   left: 2px
 .slider-arrow.next-arrow
   right: 2px
+
+.new-product__image
+  width: 35%
+  margin: -50px -50px 0 0
+  img
+    display: inline-block
+    width: 100%
+    height: auto
+
+.slide-content
+  width: 65%
+  padding: 25px
+  display: -webkit-flex
+  display: -moz-flex
+  display: -ms-flex
+  display: -o-flex
+  display: flex
+  -webkit-justify-content: space-between
+  -moz-justify-content: space-between
+  -ms-justify-content: space-between
+  -o-justify-content: space-between
+  justify-content: space-between
+  -ms-align-items: flex-start
+  align-items: flex-start
+  -webkit-flex-direction: column
+  -moz-flex-direction: column
+  -ms-flex-direction: column
+  -o-flex-direction: column
+  flex-direction: column
+  p
+    display: block
+    margin-bottom: 15px
+    font-size: 16px
+    line-height: 26px
+
+.post-date
+  font-family: "OpenSansRegular"
+
+.post-subheader
+  font-family: "OpenSansSemibold"
+
+.post-paragraph
+  font-family: "OpenSansLight"
+
+.bordered
+  position: relative
+  border: 1px solid #c5c5c5
+  padding: 0
+
+.slide-content_wrap
+  display: -webkit-flex
+  display: -moz-flex
+  display: -ms-flex
+  display: -o-flex
+  display: flex
+  -webkit-justify-content: space-between
+  -moz-justify-content: space-between
+  -ms-justify-content: space-between
+  -o-justify-content: space-between
+  justify-content: space-between
+  -ms-align-items: stretch
+  align-items: stretch
+  margin: 50px
 /* new products END */
 
 @import 'media'
