@@ -70,10 +70,10 @@ body
 
 /* page top */
 .page-top
-  min-height: 740px
   padding-top: 120px
-  background: url('../img/slider-bg.jpg') no-repeat 50% 50%
-  background-size: cover
+  background: #ecebf0 url('../img/slider-bg.jpg') no-repeat 0 0
+  background-size: 100% auto;
+  background-position: 50% 100%;
   background-attachment: scroll
   display: -webkit-flex
   display: -moz-flex
@@ -87,6 +87,8 @@ body
   justify-content: center
   -ms-align-items: flex-start
   align-items: flex-start
+  height: 100vh
+  position: relative
 
 .logo
   font: 60px/62px 'Bonfire'
@@ -369,6 +371,29 @@ body
   -ms-align-items: stretch
   align-items: stretch
   margin: 50px
+
 /* new products END */
+
+.banner-box
+  position: absolute
+  top: 30%
+  left: 50%
+  transform: translate(-50%,-30%)
+
+.message-box
+  background: #fff
+  padding: 10px
+  box-shadow: 0 0 10px rgba(0,0,0,.2)
+  margin-top: 20px
+  border-radius: 5px
+  span
+    text-align: center
+    display: block
+    margin: 5px 0
+  .message-title
+    display: block
+    font-size: 18px
+    line-height: 20px
+    margin-bottom: 15px
 
 @import 'media'

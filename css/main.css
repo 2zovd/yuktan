@@ -93,10 +93,10 @@ body {
 /* general styles END */
 /* page top */
 .page-top {
-  min-height: 740px;
   padding-top: 120px;
-  background: url("../img/slider-bg.jpg") no-repeat 50% 50%;
-  background-size: cover;
+  background: #ecebf0 url("../img/slider-bg.jpg") no-repeat 0 0;
+  background-size: 100% auto;
+  background-position: 50% 100%;
   background-attachment: scroll;
   display: -webkit-flex;
   display: -moz-flex;
@@ -116,7 +116,9 @@ body {
   -webkit-box-align: start;
   -webkit-align-items: flex-start;
   -ms-flex-align: start;
-  align-items: flex-start; }
+  align-items: flex-start;
+  height: 100vh;
+  position: relative; }
 
 .logo {
   font: 60px/62px 'Bonfire';
@@ -428,6 +430,31 @@ body {
   margin: 50px; }
 
 /* new products END */
+.banner-box {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -30%);
+  -ms-transform: translate(-50%, -30%);
+  transform: translate(-50%, -30%); }
+
+.message-box {
+  background: #fff;
+  padding: 10px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+  border-radius: 5px; }
+  .message-box span {
+    text-align: center;
+    display: block;
+    margin: 5px 0; }
+  .message-box .message-title {
+    display: block;
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 15px; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px) {
@@ -447,7 +474,16 @@ body {
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
-  /**/ }
+  .banner-logo {
+    width: 300px;
+    height: 126px; }
+    .banner-logo:hover {
+      background-position: 0 -127px; }
+  .banner-box {
+    width: 90%;
+    top: 40%; }
+  .page-top {
+    background-size: 150% auto; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
